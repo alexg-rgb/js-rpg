@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Battlefront</title>
+</head>
+<body>
+    <header>RPG project</header>
+    <main>
+        <section id="vsScreen">
+            <article id="playerOne">
+                <div id="namePOneOutput">
+                    Name
+                </div>
+                <div id="itemPOneOutput">
+                    <img id="bootsItem" src="images/bottes.png" alt="boots">
+                    <img id="staffItem" src="images/staff.png" alt="staff">
+                    <img id="swordItem" src="images/epee.png" alt="sword">
+                    <img id="bowItem" src="images/bow.png" alt="bow">
+                    
+                </div>
+                <div id="racePOneOutput">
+                    Race
+                </div>
+                <div id="healthPlayerOne">
+                    Health: 
+                    
+                </div>
+                <div id="displayPlayerOne">
+                    <img id="humanDisplay" src="images/homme.png" alt="human">
+                    <img id="orcDisplay" src="images/orc.png" alt="orc">
+                    <img id="elveDisplay" src="images/elfe.png" alt="elve">
+                    <img id="vampireDisplay" src="images/vampire.png" alt="vampire">
+                </div>
+                <div id="buttonPlayerOne">
+                    <button id="hitPlayerOne">Hit</button>
+                    <button id="healPlayerOne">Heal</button>
+                    <button id="yieldPlayerOne">Yield</button>
+                </div>
+                <div id="createPlayerOne">
+                    <input id="namePlayerOne" type="Name" placeholder="Name">
+                    <select id="itemsPlayerOne" name="items" class="items">
+                        <option value="boots">boots</option>
+                        <option value="staff">staff</option>
+                        <option value="sword">sword</option>
+                        <option value="bow">bow</option>
+                    </select>
+                    <select id="racePlayerOne" name="race" class="race">
+                        <option value="human">human</option>
+                        <option value="orc">orc</option>
+                        <option value="elve">elve</option>
+                        <option value="vampire">vampire</option>
+                    </select>
+                    <button type="button" id="runOne">Submit</button>
+                </div>
+                <div id="playerOneLastMove">
+                    Last move
+                </div>
+            </article>
+            <article id="playerTwo">
+                <div id="namePTwoOutput">
+                    Name
+                </div>
+                <div id="itemPTwoOutput">
+                    <img id="bootsItemTwo" src="images/bottes.png" alt="boots">
+                    <img id="staffItemTwo" src="images/staff.png" alt="staff">
+                    <img id="swordItemTwo" src="images/epee.png" alt="sword">
+                    <img id="bowItemTwo" src="images/bow.png" alt="bow">
+                </div>
+                <div id="racePTwoOutput">
+                    Race
+                </div>
+                <div id="healthPlayerTwo">
+                    Health:
+                </div>
+                <div id="displayPlayerTwo">
+                    <img id="humanDisplayTwo" src="images/homme.png" alt="human">
+                    <img id="orcDisplayTwo" src="images/orc.png" alt="orc">
+                    <img id="elveDisplayTwo" src="images/elfe.png" alt="elve">
+                    <img id="vampireDisplayTwo" src="images/vampire.png" alt="vampire">
+                </div>
+                <div id="buttonPlayerTwo">
+                    <button id="hitPlayerTwo">Hit</button>
+                    <button id="healPlayerTwo">Heal</button>
+                    <button id="yieldPlayerTwo">Yield</button>
+                </div>
+                <div id="createPlayerTwo">
+                    <input id="namePlayerTwo" type="Name" placeholder="Name">
+                    <select id="itemsPlayerTwo" name="items" class="items">
+                        <option value="boots">boots</option>
+                        <option value="staff">staff</option>
+                        <option value="sword">sword</option>
+                        <option value="bow">bow</option>
+                    </select>
+                    <select id="racePlayerTwo" name="race" class="race">
+                        <option value="human">human</option>
+                        <option value="orc">orc</option>
+                        <option value="elve">elve</option>
+                        <option value="vampire">vampire</option>
+                    </select>
+                    <button type="button" id="runTwo">Submit</button>
+                </div>
+                <div id="playerTwoLastMove">
+                    Last move
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+    <script src="gamelogic.js"></script>
+</body>
+</html>
