@@ -152,3 +152,7 @@ document.getElementById("runTwo").addEventListener("click", () => {
 document.getElementById("yieldPlayerTwo").addEventListener("click", () => {
     disableButtonPlayerTwo();
 });
+
+document.getElementById("restartButton").addEventListener("click", () => {
+    window.location.reload()
+});
