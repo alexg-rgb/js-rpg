@@ -121,6 +121,8 @@ document.getElementById("orcDisplayTwo").style.display = "none";
 document.getElementById("elveDisplayTwo").style.display = "none";
 document.getElementById("vampireDisplayTwo").style.display = "none";
 
+document.getElementById("restartButton").style.display = "none";
+
 document.getElementById("runTwo").addEventListener("click", () => {
 
     racePlayerTwo = document.getElementById("racePlayerTwo").value;
@@ -140,6 +142,7 @@ document.getElementById("runTwo").addEventListener("click", () => {
     document.getElementById("healthPlayerTwo").style.display = "flex";
     document.getElementById("displayPlayerTwo").style.display = "flex";
     document.getElementById("itemPTwoOutput").style.display = "flex";
+    document.getElementById("restartButton").style.display = "flex";
     
     playerTwoFunc = new Person(racePlayerTwo, itemsPlayerTwo, namePlayerTwo);
     document.getElementById("healthPlayerTwo").setAttribute("value", playerTwoFunc.currenthealth);
