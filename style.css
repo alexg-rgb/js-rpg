@@ -495,6 +495,9 @@ progress::-moz-progress-bar {
         align-items: center;
     }
 }
+#stats {
+    display: none;
+}
 @media screen and (min-width: 800px){
     main {
         display: grid;
@@ -503,11 +506,26 @@ progress::-moz-progress-bar {
     section {
          display: grid;
          grid-template-columns: auto auto;
+         grid-template-rows: auto auto auto;
          gap: 20px;
          height: 90%;
          width: 90%;
          margin: auto;
          margin-top: 10%;
+     }
+     #restartt {
+         grid-row: 2;
+     }
+     #stats {
+        display: grid;
+        grid-column: span 2;
+        grid-row: 3;
+        height: 50%;
+     }
+     #stats td {
+         background-color: wheat;
+         border-radius: 5px;
+         box-shadow: 5px 5px 5px grey;
      }
 }
 
