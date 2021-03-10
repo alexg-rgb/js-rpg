@@ -79,13 +79,22 @@ document.getElementById("runOne").addEventListener("click", () => {
  document.getElementById("hitPlayerOne").addEventListener("click", () => {
     attackPlayerOne();
     disableButtonPlayerOne();
+    vampireLifesteal();
+    messagePlayerOneHit();
+    victoryOrLoose();
  });
  document.getElementById("healPlayerOne").addEventListener("click", () => {
     healPlayerOne();
-    disableButtonPlayerOne()
+    disableButtonPlayerOne();
+    vampireLifesteal();
+    messagePlayerOneHeal();
+    victoryOrLoose();
 });
 document.getElementById("yieldPlayerOne").addEventListener("click", () => {
-    disableButtonPlayerOne()
+    disableButtonPlayerOne();
+    vampireLifesteal();
+    messagePlayerOneYield();
+    victoryOrLoose();
 });
 // Plyer Two
 let racePlayerTwo;
@@ -144,13 +153,22 @@ document.getElementById("runTwo").addEventListener("click", () => {
  document.getElementById("hitPlayerTwo").addEventListener("click", () => {
     attackPlayerTwo()
     disableButtonPlayerTwo();
+    vampireLifestealTwo();
+    messagePlayerTwoHit();
+    victoryOrLoose();
  });
  document.getElementById("healPlayerTwo").addEventListener("click", () => {
     healPlayerTwo();
     disableButtonPlayerTwo();
+    vampireLifestealTwo();
+    messagePlayerTwoHeal();
+    victoryOrLoose();
 });
 document.getElementById("yieldPlayerTwo").addEventListener("click", () => {
     disableButtonPlayerTwo();
+    vampireLifestealTwo();
+    messagePlayerTwoYield();
+    victoryOrLoose();
 });
 
 document.getElementById("restartButton").addEventListener("click", () => {
