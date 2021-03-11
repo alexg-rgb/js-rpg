@@ -37,6 +37,12 @@ footer {
     display: flex;
     justify-content: center;
 }
+h2 {
+    display: none;
+}
+h3 {
+    display: none;
+}
 #playerOne {
     display: grid;
     grid-template-rows: 10% 10% 10% 15% 10% 10% 10%;
