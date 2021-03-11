@@ -43,9 +43,7 @@ h2 {
 h3 {
     display: none;
 }
-label {
-    display: none;
-}
+
 #playerOne {
     display: grid;
     grid-template-rows: 10% 10% 10% 15% 10% 10% 10%;
