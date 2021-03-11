@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <title>Battlefront</title>
 </head>
+
 <body>
-    <header><h1>RPG project</h1></header>
+    <header>
+        <h1>RPG project</h1>
+    </header>
     <main>
         <section id="vsScreen">
             <h2>VS Screen</h2>
@@ -23,14 +27,14 @@
                     <img id="staffItem" src="images/staff.png" alt="staff">
                     <img id="swordItem" src="images/epee.png" alt="sword">
                     <img id="bowItem" src="images/bow.png" alt="bow">
-                    
+
                 </div>
                 <div id="racePOneOutput">
                     Race
                 </div>
                 <div id="healthPlayerOne">
-                    Health: 
-                    
+                    Health:
+
                 </div>
                 <div id="displayPlayerOne">
                     <img id="humanDisplay" src="images/homme.png" alt="human">
@@ -45,9 +49,9 @@
                 </div>
                 <div id="createPlayerOne">
                     <label for="namePlayerOne">Name:
-                        <input id="namePlayerOne" type="text" >
+                        <input id="namePlayerOne" type="text">
                     </label>
-                    
+
                     <label for="itemsPlayerOne">Items:
                         <select id="itemsPlayerOne" name="items" class="items">
                             <option value="boots">boots</option>
@@ -56,7 +60,7 @@
                             <option value="bow">bow</option>
                         </select>
                     </label>
-                    
+
                     <label for="racePlayerOne">Races:
                         <select id="racePlayerOne" name="race" class="race">
                             <option value="human">human</option>
@@ -65,7 +69,7 @@
                             <option value="vampire">vampire</option>
                         </select>
                     </label>
-                    
+
                     <button type="button" id="runOne">Submit</button>
                 </div>
                 <div id="playerOneLastMove">
@@ -104,7 +108,7 @@
                     <label for="namePlayerTwo">Name:
                         <input id="namePlayerTwo" type="text">
                     </label>
-                    
+
                     <label for="itemsPlayerTwo">Items:
                         <select id="itemsPlayerTwo" name="items" class="items">
                             <option value="boots">boots</option>
@@ -113,7 +117,7 @@
                             <option value="bow">bow</option>
                         </select>
                     </label>
-                    
+
                     <label for="racePlayerTwo">Races:
                         <select id="racePlayerTwo" name="race" class="race">
                             <option value="human">human</option>
@@ -151,7 +155,7 @@
                         <td>30% more damage</td>
                         <td>30% chance to attack twice</td>
                     </tr>
-               
+
                     <tr>
                         <td>RACE</td>
                         <td>Humans</td>
@@ -162,8 +166,9 @@
                     <tr>
                         <td></td>
                         <td>20% less damage taken</td>
-                        <td>40% more max health	</td>
-                        <td>30% chance to deflect the attack back to the opponent. The attacker takes damage equal to 50% of the original hit. The elf takes no damage.</td>
+                        <td>40% more max health </td>
+                        <td>30% chance to deflect the attack back to the opponent. The attacker takes damage equal to
+                            50% of the original hit. The elf takes no damage.</td>
                         <td>10% lifesteal from opponents current health at start of the vampire's turn.</td>
                     </tr>
                 </table>
@@ -177,4 +182,5 @@
     <script src="gamelogic.js"></script>
     <script src="https://kit.fontawesome.com/55da1df4eb.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

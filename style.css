@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -15,19 +16,21 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+
 main {
     display: grid;
-     gap: 20px;
- }
- 
+    gap: 20px;
+}
+
 section {
-     display: grid;
-     grid-template-rows: auto auto auto;
-     gap: 20px;
-     height: 70%;
-     width: 90%;
-     margin: auto;
- }
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    height: 70%;
+    width: 90%;
+    margin: auto;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -37,9 +40,11 @@ footer {
     display: flex;
     justify-content: center;
 }
+
 h2 {
     display: none;
 }
+
 h3 {
     display: none;
 }
@@ -49,21 +54,25 @@ h3 {
     grid-template-rows: 10% 10% 10% 15% 10% 10% 10%;
     grid-template-columns: auto auto;
 }
+
 #healthPlayerOne {
     grid-column: 1;
     grid-row: 1;
     color: wheat;
 }
+
 #namePOneOutput {
     grid-column: 1;
     grid-row: 2;
     color: wheat;
 }
+
 #racePOneOutput {
     grid-column: 1;
     grid-row: 3;
     color: wheat;
 }
+
 #itemPOneOutput {
     grid-column: 1;
     grid-row: 4;
@@ -72,6 +81,7 @@ h3 {
     justify-content: center;
     align-items: center;
 }
+
 #bootsItem {
     width: 100%;
     max-width: 200px;
@@ -80,6 +90,7 @@ h3 {
     box-shadow: 5px 5px 5px grey;
     background-color: wheat;
 }
+
 #staffItem {
     width: 100%;
     max-width: 100px;
@@ -89,6 +100,7 @@ h3 {
     box-shadow: 5px 5px 5px grey;
     background-color: wheat;
 }
+
 #swordItem {
     width: 100%;
     max-width: 150px;
@@ -97,6 +109,7 @@ h3 {
     box-shadow: 5px 5px 5px grey;
     background-color: wheat;
 }
+
 #bowItem {
     width: 100%;
     max-width: 200px;
@@ -105,7 +118,8 @@ h3 {
     box-shadow: 5px 5px 5px grey;
     background-color: wheat;
 }
-#displayPlayerOne{
+
+#displayPlayerOne {
     grid-column: 2;
     grid-row-start: 1;
     grid-row-end: 6;
@@ -113,6 +127,7 @@ h3 {
     justify-content: center;
     align-items: center;
 }
+
 #humanDisplay {
     width: 100%;
     max-width: 200px;
@@ -121,6 +136,7 @@ h3 {
     box-shadow: 5px 5px 5px grey;
     background-color: wheat;
 }
+
 #orcDisplay {
     width: 100%;
     max-width: 200px;
@@ -129,6 +145,7 @@ h3 {
     box-shadow: 5px 5px 5px grey;
     background-color: wheat;
 }
+
 #elveDisplay {
     width: 100%;
     max-width: 200px;
@@ -137,6 +154,7 @@ h3 {
     box-shadow: 5px 5px 5px grey;
     background-color: wheat;
 }
+
 #vampireDisplay {
     width: 100%;
     max-width: 200px;
@@ -155,26 +173,31 @@ h3 {
     justify-content: center;
     align-items: center;
 }
+
 #namePlayerOne {
-    background-color:wheat;
+    background-color: wheat;
     padding: 10px;
     border-radius: 5px;
 }
+
 #itemsPlayerOne {
-    background-color:wheat;
+    background-color: wheat;
     border-style: unset;
     border-radius: unset;
 }
+
 #racePlayerOne {
-    background-color:wheat;
+    background-color: wheat;
     border-style: unset;
     border-radius: unset;
 }
+
 #runOne {
     padding: 10px;
     border-radius: 5px;
     background-color: wheat;
 }
+
 #buttonPlayerOne {
     font-family: Courier, monospace;
     grid-column: span 2;
@@ -192,6 +215,7 @@ h3 {
     background-color: wheat;
     box-shadow: 5px 5px 5px grey;
 }
+
 #healPlayerOne {
     padding: 15px;
     border-radius: 5px;
@@ -199,6 +223,7 @@ h3 {
     background-color: wheat;
     box-shadow: 5px 5px 5px grey;
 }
+
 #yieldPlayerOne {
     padding: 15px;
     border-radius: 5px;
@@ -216,27 +241,32 @@ h3 {
     align-items: center;
     color: wheat;
 }
+
 progress {
     border: 0;
     height: 20px;
     border-radius: 20px;
     margin-left: 5px;
 }
+
 progress::-webkit-progress-bar {
     border: 0;
     height: 20px;
     border-radius: 20px;
 }
+
 progress::-webkit-progress-value {
     border: 0;
     height: 20px;
     border-radius: 20px;
 }
+
 progress::-moz-progress-bar {
     border: 0;
     height: 20px;
     border-radius: 20px;
 }
+
 /*Player two*/
 
 #playerTwo {
@@ -251,6 +281,7 @@ progress::-moz-progress-bar {
     color: wheat;
     margin-left: auto;
 }
+
 #namePTwoOutput {
     grid-column: 2;
     grid-row: 2;
@@ -258,6 +289,7 @@ progress::-moz-progress-bar {
     display: flex;
     flex-direction: row-reverse;
 }
+
 #racePTwoOutput {
     grid-column: 2;
     grid-row: 3;
@@ -265,6 +297,7 @@ progress::-moz-progress-bar {
     display: flex;
     flex-direction: row-reverse;
 }
+
 #itemPTwoOutput {
     grid-column: 2;
     grid-row: 4;
@@ -273,6 +306,7 @@ progress::-moz-progress-bar {
     justify-content: center;
     align-items: center;
 }
+
 #bootsItemTwo {
     width: 100%;
     max-width: 200px;
@@ -281,6 +315,7 @@ progress::-moz-progress-bar {
     box-shadow: 5px 5px 5px grey;
     background-color: wheat;
 }
+
 #staffItemTwo {
     width: 100%;
     max-width: 100px;
@@ -290,6 +325,7 @@ progress::-moz-progress-bar {
     box-shadow: 5px 5px 5px grey;
     background-color: wheat;
 }
+
 #swordItemTwo {
     width: 100%;
     max-width: 150px;
@@ -298,6 +334,7 @@ progress::-moz-progress-bar {
     box-shadow: 5px 5px 5px grey;
     background-color: wheat;
 }
+
 #bowItemTwo {
     width: 100%;
     max-width: 200px;
@@ -307,7 +344,7 @@ progress::-moz-progress-bar {
     background-color: wheat;
 }
 
-#displayPlayerTwo{
+#displayPlayerTwo {
     grid-column: 1;
     grid-row-start: 1;
     grid-row-end: 6;
@@ -315,6 +352,7 @@ progress::-moz-progress-bar {
     justify-content: center;
     align-items: center;
 }
+
 #humanDisplayTwo {
     width: 100%;
     max-width: 200px;
@@ -323,6 +361,7 @@ progress::-moz-progress-bar {
     box-shadow: 5px 5px 5px grey;
     background-color: wheat;
 }
+
 #orcDisplayTwo {
     width: 100%;
     max-width: 200px;
@@ -331,6 +370,7 @@ progress::-moz-progress-bar {
     box-shadow: 5px 5px 5px grey;
     background-color: wheat;
 }
+
 #elveDisplayTwo {
     width: 100%;
     max-width: 200px;
@@ -339,6 +379,7 @@ progress::-moz-progress-bar {
     box-shadow: 5px 5px 5px grey;
     background-color: wheat;
 }
+
 #vampireDisplayTwo {
     width: 100%;
     max-width: 200px;
@@ -347,6 +388,7 @@ progress::-moz-progress-bar {
     box-shadow: 5px 5px 5px grey;
     background-color: wheat;
 }
+
 #createPlayerTwo {
     grid-column: span 2;
     grid-row: 1;
@@ -356,26 +398,31 @@ progress::-moz-progress-bar {
     justify-content: center;
     align-items: center;
 }
+
 #namePlayerTwo {
-    background-color:wheat;
+    background-color: wheat;
     padding: 10px;
     border-radius: 5px;
 }
+
 #itemsPlayerTwo {
-    background-color:wheat;
+    background-color: wheat;
     border-style: unset;
     border-radius: unset;
 }
+
 #racePlayerTwo {
-    background-color:wheat;
+    background-color: wheat;
     border-style: unset;
     border-radius: unset;
 }
+
 #runTwo {
     padding: 10px;
     border-radius: 5px;
     background-color: wheat;
 }
+
 #buttonPlayerTwo {
     grid-column: span 2;
     grid-row: 6;
@@ -384,6 +431,7 @@ progress::-moz-progress-bar {
     justify-content: center;
     align-items: center;
 }
+
 #hitPlayerTwo {
     padding: 15px;
     border-radius: 5px;
@@ -391,6 +439,7 @@ progress::-moz-progress-bar {
     background-color: wheat;
     box-shadow: 5px 5px 5px grey;
 }
+
 #healPlayerTwo {
     padding: 15px;
     border-radius: 5px;
@@ -398,6 +447,7 @@ progress::-moz-progress-bar {
     background-color: wheat;
     box-shadow: 5px 5px 5px grey;
 }
+
 #yieldPlayerTwo {
     padding: 15px;
     border-radius: 5px;
@@ -405,6 +455,7 @@ progress::-moz-progress-bar {
     background-color: wheat;
     box-shadow: 5px 5px 5px grey;
 }
+
 #playerTwoLastMove {
     grid-column: span 2;
     grid-row: 7;
@@ -414,12 +465,14 @@ progress::-moz-progress-bar {
     align-items: center;
     color: wheat;
 }
+
 #restartt {
     display: grid;
     grid-template-columns: 100%;
     margin-left: auto;
 }
-#restartBton button{
+
+#restartBton button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -427,8 +480,9 @@ progress::-moz-progress-bar {
     box-shadow: 5px 5px 5px grey;
     border-radius: 5px;
 }
-@media screen and (max-width: 430px){
-     #bootsItem {
+
+@media screen and (max-width: 430px) {
+    #bootsItem {
         width: 100%;
         max-width: 100px;
         height: auto;
@@ -436,6 +490,7 @@ progress::-moz-progress-bar {
         box-shadow: 5px 5px 5px grey;
         background-color: wheat;
     }
+
     #staffItem {
         width: 100%;
         max-width: 50px;
@@ -445,6 +500,7 @@ progress::-moz-progress-bar {
         box-shadow: 5px 5px 5px grey;
         background-color: wheat;
     }
+
     #swordItem {
         width: 100%;
         max-width: 75px;
@@ -453,6 +509,7 @@ progress::-moz-progress-bar {
         box-shadow: 5px 5px 5px grey;
         background-color: wheat;
     }
+
     #bowItem {
         width: 100%;
         max-width: 100px;
@@ -461,6 +518,7 @@ progress::-moz-progress-bar {
         box-shadow: 5px 5px 5px grey;
         background-color: wheat;
     }
+
     /*Player two*/
     #bootsItemTwo {
         width: 100%;
@@ -470,6 +528,7 @@ progress::-moz-progress-bar {
         box-shadow: 5px 5px 5px grey;
         background-color: wheat;
     }
+
     #staffItemTwo {
         width: 100%;
         max-width: 50px;
@@ -479,6 +538,7 @@ progress::-moz-progress-bar {
         box-shadow: 5px 5px 5px grey;
         background-color: wheat;
     }
+
     #swordItemTwo {
         width: 100%;
         max-width: 75px;
@@ -487,6 +547,7 @@ progress::-moz-progress-bar {
         box-shadow: 5px 5px 5px grey;
         background-color: wheat;
     }
+
     #bowItemTwo {
         width: 100%;
         max-width: 100px;
@@ -495,6 +556,7 @@ progress::-moz-progress-bar {
         box-shadow: 5px 5px 5px grey;
         background-color: wheat;
     }
+
     #buttonPlayerOne button {
         width: 20px;
         height: 50%;
@@ -503,6 +565,7 @@ progress::-moz-progress-bar {
         justify-content: center;
         align-items: center;
     }
+
     #buttonPlayerTwo button {
         width: 20px;
         height: 50%;
@@ -512,43 +575,47 @@ progress::-moz-progress-bar {
         align-items: center;
     }
 }
+
 #stats {
     display: none;
 }
-@media screen and (min-width: 800px){
+
+@media screen and (min-width: 800px) {
     main {
         display: grid;
-         gap: 20px;
-     }
+        gap: 20px;
+    }
+
     section {
-         display: grid;
-         grid-template-columns: auto auto;
-         grid-template-rows: auto auto auto;
-         gap: 20px;
-         height: 90%;
-         width: 90%;
-         margin: auto;
-         margin-top: 7%;
-     }
-     header {
-         display: flex;
-         justify-content: center;
-     }
-     
-     #restartt {
-         grid-row: 2;
-     }
-     #stats {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+        height: 90%;
+        width: 90%;
+        margin: auto;
+        margin-top: 7%;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    #restartt {
+        grid-row: 2;
+    }
+
+    #stats {
         display: grid;
         grid-column: span 2;
         grid-row: 3;
         height: 50%;
-     }
-     #stats td {
-         background-color: wheat;
-         border-radius: 5px;
-         box-shadow: 5px 5px 5px grey;
-     }
+    }
+
+    #stats td {
+        background-color: wheat;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px grey;
+    }
 }
-
-

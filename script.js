@@ -1,22 +1,22 @@
-function Person(race,item,name,min,maxHealing){
+function Person(race, item, name, min, maxHealing) {
     this.race = race;
     this.item = item;
     this.name = name
     this.currenthealth = 100;
 
     this.maxHealth = 100;
-    
+
     this.min = 3;
     this.maxDamage = 20;
     this.maxHealing = 30;
 
-    this.heal = function(){};
+    this.heal = function () {};
 
-    this.damage = function(){};
+    this.damage = function () {};
 
     this.totalDamage = this.damage();
 
-    this.displayChar = function(){
+    this.displayChar = function () {
         return console.log(`I am a ${this.race}, I wield a ${this.item}, my total health point are ${this.maxHealth}`);
     };
 }
@@ -52,9 +52,9 @@ document.getElementById("runOne").addEventListener("click", () => {
     itemsPlayerOne = document.getElementById("itemsPlayerOne").value;
     namePlayerOne = document.getElementById("namePlayerOne").value;
 
-    document.getElementById("namePOneOutput").innerHTML = "Name: "+namePlayerOne;
+    document.getElementById("namePOneOutput").innerHTML = "Name: " + namePlayerOne;
     itemsDisplay();
-    document.getElementById("racePOneOutput").innerHTML = "Race: "+racePlayerOne;
+    document.getElementById("racePOneOutput").innerHTML = "Race: " + racePlayerOne;
     raceDisplay();
 
     document.getElementById("createPlayerOne").style.display = "none";
@@ -67,23 +67,23 @@ document.getElementById("runOne").addEventListener("click", () => {
     document.getElementById("itemPOneOutput").style.display = "flex";
 
 
-    
+
     playerOneFunc = new Person(racePlayerOne, itemsPlayerOne, namePlayerOne);
     document.getElementById("healthPlayerOne").setAttribute("value", playerOneFunc.currenthealth);
-    healthPlayerOne = document.createElement("progress"); 
-    healthPlayerOne.setAttribute("value", playerOneFunc.currenthealth); 
-    healthPlayerOne.setAttribute("max", playerOneFunc.maxHealth); 
+    healthPlayerOne = document.createElement("progress");
+    healthPlayerOne.setAttribute("value", playerOneFunc.currenthealth);
+    healthPlayerOne.setAttribute("max", playerOneFunc.maxHealth);
     document.getElementById("healthPlayerOne").appendChild(healthPlayerOne);
     raceChoose();
- });
- document.getElementById("hitPlayerOne").addEventListener("click", () => {
+});
+document.getElementById("hitPlayerOne").addEventListener("click", () => {
     attackPlayerOne();
     disableButtonPlayerOne();
     vampireLifesteal();
     messagePlayerOneHit();
     victoryOrLoose();
- });
- document.getElementById("healPlayerOne").addEventListener("click", () => {
+});
+document.getElementById("healPlayerOne").addEventListener("click", () => {
     healPlayerOne();
     disableButtonPlayerOne();
     vampireLifesteal();
@@ -129,9 +129,9 @@ document.getElementById("runTwo").addEventListener("click", () => {
     itemsPlayerTwo = document.getElementById("itemsPlayerTwo").value;
     namePlayerTwo = document.getElementById("namePlayerTwo").value;
 
-    document.getElementById("namePTwoOutput").innerHTML = "Name: "+namePlayerTwo;
+    document.getElementById("namePTwoOutput").innerHTML = "Name: " + namePlayerTwo;
     itemsDisplayTwo();
-    document.getElementById("racePTwoOutput").innerHTML = "Race: "+racePlayerTwo;
+    document.getElementById("racePTwoOutput").innerHTML = "Race: " + racePlayerTwo;
     raceDisplayTwo();
 
     document.getElementById("createPlayerTwo").style.display = "none";
@@ -143,24 +143,24 @@ document.getElementById("runTwo").addEventListener("click", () => {
     document.getElementById("displayPlayerTwo").style.display = "flex";
     document.getElementById("itemPTwoOutput").style.display = "flex";
     document.getElementById("restartButton").style.display = "flex";
-    
+
     playerTwoFunc = new Person(racePlayerTwo, itemsPlayerTwo, namePlayerTwo);
     document.getElementById("healthPlayerTwo").setAttribute("value", playerTwoFunc.currenthealth);
-    healthPlayerTwo = document.createElement("progress"); 
-    healthPlayerTwo.setAttribute("value", playerTwoFunc.currenthealth); 
-    healthPlayerTwo.setAttribute("max", playerTwoFunc.maxHealth); 
+    healthPlayerTwo = document.createElement("progress");
+    healthPlayerTwo.setAttribute("value", playerTwoFunc.currenthealth);
+    healthPlayerTwo.setAttribute("max", playerTwoFunc.maxHealth);
     document.getElementById("healthPlayerTwo").appendChild(healthPlayerTwo);
     raceChooseTwo();
- });
+});
 
- document.getElementById("hitPlayerTwo").addEventListener("click", () => {
+document.getElementById("hitPlayerTwo").addEventListener("click", () => {
     attackPlayerTwo()
     disableButtonPlayerTwo();
     vampireLifestealTwo();
     messagePlayerTwoHit();
     victoryOrLoose();
- });
- document.getElementById("healPlayerTwo").addEventListener("click", () => {
+});
+document.getElementById("healPlayerTwo").addEventListener("click", () => {
     healPlayerTwo();
     disableButtonPlayerTwo();
     vampireLifestealTwo();
